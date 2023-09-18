@@ -1,7 +1,5 @@
-import React from "react";
+import React  from "react";
 import styled from "styled-components";
-import OverViewComponent from "./OverViewComponent";
-import TransactionsComponent from "./TransactionsComponent"
 
 const Container = styled.div`
   background-color: white;
@@ -16,17 +14,15 @@ const Container = styled.div`
 `;
 
 
-const HomeComponent = (props) => {
+const TransactionsComponent = (props) => {
 
     return (
         <Container>
-            HomeComponent
-            <OverViewComponent />
-            <TransactionsComponent />
+             TransactionsComponent
         </Container>
 
     );
 
 };
 
-export default HomeComponent;
+export default TransactionsComponent;

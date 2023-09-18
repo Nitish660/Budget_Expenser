@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import HomeComponent from './modules/home/index'
+
 
 const Container = styled.div`
   display: flex;
@@ -18,9 +20,12 @@ const Header = styled.span`
 const App = () => {
   return (
     <Container>
-      <Header>Expense tracker</Header>
+      <Header>Expensetracker</Header>
+      <HomeComponent />
     </Container>
   );
 };
 
 export default App;
+
+
