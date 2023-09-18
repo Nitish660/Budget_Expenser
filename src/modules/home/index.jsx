@@ -19,17 +19,17 @@ const Container = styled.div`
 const HomeComponent = (props) => {
     const[transactions,updateTransaction] = useState([]);
 
-    const addTransaction = (payload) =>{
-        const transactionArray =[...transactions];
+    const addTransaction = (payload) => {
+        const transactionArray = [...transactions];
         transactionArray.push(payload);
         updateTransaction(transactionArray);
-    }
+    };
 
     return (
         <Container>
             
-            <OverViewComponent />
-            <TransactionsComponent />
+            <OverViewComponent addTransaction={addTransaction}/>
+            <TransactionsComponent transactions={transactions}/>
         </Container>
 
     );

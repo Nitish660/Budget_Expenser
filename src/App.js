@@ -11,11 +11,17 @@ const Container = styled.div`
   font-family: Montserrat;
 `;
 
-const Header = styled.span`
-  color: black;
+const Header = styled.div`
+  background-color: white;
+  color: #0d1d2c;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 22px;
   font-size: 25px;
   font-weight: bold;
 `;
+
 
 const App = () => {
   return (
